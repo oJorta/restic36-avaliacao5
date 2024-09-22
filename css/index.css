@@ -101,9 +101,8 @@ hr {
 #mental-health-container {
     display: flex;
     flex-direction: column;
-    padding: 6rem 0;
+    padding: 6rem 0 2rem 0;
 }
-
 
 @media (max-width: 768px) {
     header {
@@ -129,6 +128,16 @@ hr {
     }
     .tips-container h3 {
         font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .section-information-wrapper h3 {
+        text-align: center;
+    }
+
+    .section-information-wrapper p {
+        text-align: justify;
     }
 }
 

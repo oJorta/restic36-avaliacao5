@@ -1,0 +1,11 @@
+footer {
+    padding: 1rem 2rem;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+footer a {
+    color: purple;
+    font-weight: bold;
+    text-decoration: underline;
+}
