@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de IMC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/globals.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/imc.css">
+</head>
+<body>
+    <header>
+        <h2>Vida Saudável</h2>
+        <nav>
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul id="menu">
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Alimentação</a></li>
+                <li><a href="#">Exercícios</a></li>
+                <li><a href="#">Saúde Mental</a></li>
+                <li><a href="#">Calculadora de IMC</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <main>
+            <section id="presentation-container">
+                <h1><strong>Calculadora de IMC</strong></h1>
+                <p>Bem-vindo à nossa <strong>Calculadora de IMC (Índice de Massa Corporal)</strong>! O IMC é uma ferramenta simples e eficaz que ajuda a avaliar se o seu peso está adequado em relação à sua altura. Com base em uma fórmula matemática, o IMC fornece uma indicação geral do seu estado nutricional, permitindo que você compreenda melhor sua saúde.</p>
+            </section>
+
+            <form id="formIMC">
+                <label for="peso">Peso (kg):</label>
+                <input type="number" id="peso" required>
+                
+                <label for="altura">Altura (m):</label>
+                <input type="number" id="altura" step="0.01" required>
+                
+                <button type="submit">Calcular IMC</button>
+            </form>
+            <div id="resultado" class="resultado"></div>
+
+        </main>
+    </div>
+</body>
+
+<script src="../js/script.js"></script>
+
+</html>
